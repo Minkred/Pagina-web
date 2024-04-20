@@ -1,0 +1,30 @@
+.linea-celeste-top {
+  background-color: rgb(53, 218, 220);
+  height: 1.3125rem;
+}
+
+.fondohero {
+  width: 100%;
+  height: 100vh;
+  background-image: url(../Assets/img/fondo-hero.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fondohero2 {
+  width: 100%;
+  height: 9.1875rem;
+  background-image: url(../Assets/img/Rectangle\ 1.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}

@@ -1,0 +1,20 @@
+.seccionServicios {
+  background-color: whitesmoke;
+  padding-right: 9.375rem;
+  padding-left: 9.375rem;
+  padding-bottom: 3.125rem;
+
+  .contenidoServicios {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+}
+
+.tituloSeccion {
+  padding: 1.875rem;
+  font-size: 2rem;
+  text-align: center;
+}

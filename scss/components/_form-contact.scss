@@ -1,0 +1,35 @@
+.formularioContacto {
+  margin-top: 20px;
+  width: 30rem;
+  height: 38.125rem;
+  padding: 50px 50px;
+  border-radius: 23px;
+  background-color: aliceblue;
+  font-size: 16px;
+  font-weight: 700;
+  box-shadow: 0 2px 2px #290c22;
+}
+
+.datosContacto {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+input {
+  border-radius: 5px;
+}
+
+textarea {
+  border-radius: 5px;
+  height: 196px;
+}
+
+.botonEnviar {
+  margin: 1.25rem 0;
+  width: 8rem;
+  height: 2.375rem;
+  background-color: #ffa900;
+  font-size: 1.25rem;
+  color: rgb(14, 16, 17);
+}

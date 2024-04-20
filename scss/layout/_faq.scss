@@ -1,0 +1,19 @@
+.preguntaBox {
+  div {
+    p {
+      padding-left: 0.625rem;
+    }
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    min-width: 300px;
+    height: auto;
+    background-color: #d7eff0;
+    font-size: 1.25rem;
+    font-weight: 600;
+    border-radius: 0.625rem;
+    border: 2px solid #35dadc;
+    margin: 1.25rem;
+  }
+}

@@ -1,0 +1,85 @@
+.contenedorFooter {
+  padding: 1.5625rem;
+  width: 100%;
+  height: 14.3125rem;
+  background-color: #7a1d63;
+  display: flex;
+  justify-content: space-around;
+
+  div {
+    .contactameMail p {
+      color: aliceblue;
+      font-size: 1.25rem;
+      font-weight: 600;
+      margin-bottom: 0.625rem;
+    }
+
+    .redesSociales {
+      width: 120%;
+      display: flex;
+      margin-top: 1.25rem;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .emailContenedor-Footer {
+      width: 15.0762rem;
+      height: 2.2569rem;
+      background-color: #ffa900;
+      border-radius: 0.125rem;
+      box-shadow: inset 0 0.1rem 0.2rem;
+      position: relative;
+      padding: 0.625rem;
+
+      .copy-2 {
+        position: absolute;
+        margin-right: 10px;
+        right: 0px;
+        bottom: 0px;
+        left: -52px;
+      }
+
+      div {
+        button {
+          width: 2.4375rem;
+          height: 2.4375rem;
+          margin-right: 0.9375rem;
+          margin-right: 0.9375rem;
+          position: absolute;
+          right: 0%;
+          bottom: 0px;
+          left: 260px;
+          border-radius: 0.3125rem;
+          background-color: #ad4893;
+        }
+      }
+    }
+  }
+
+  .enlaces-de-ayuda {
+    div {
+      color: aliceblue;
+      font-size: 1.25rem;
+      font-weight: 500;
+      margin-bottom: 0.625rem;
+    }
+    ul {
+      li {
+        list-style: none;
+        margin-top: 10px;
+        a {
+          text-decoration: none;
+          color: aliceblue;
+        }
+      }
+    }
+  }
+}
+
+.copyright {
+  color: #ffa900;
+  background-color: #7a1d63;
+  text-align: center;
+  font-size: 0.9375rem;
+  font-weight: 400;
+}

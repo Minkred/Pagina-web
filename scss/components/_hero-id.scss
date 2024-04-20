@@ -1,0 +1,160 @@
+.tarjetaid {
+  margin-top: 9.3125rem;
+  margin-bottom: 7.125rem;
+  margin-left: 1.25rem;
+  margin-right: 1.25rem;
+  max-width: 58.125rem;
+  height: 35.5625rem;
+  background-color: #ad4893;
+  border: 0.0625rem solid rgb(53, 8, 27);
+  border-radius: 1.875rem;
+  box-shadow: #290c22 0 3px 2px 0px;
+}
+
+.contenidoId {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: auto 50%;
+  gap: 40px;
+}
+
+.infoId {
+  padding-left: 20px;
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.graficaId {
+  padding-right: 20px;
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.nombreId {
+  font-size: 3rem;
+  font-weight: 600;
+  color: rgb(255, 255, 255);
+}
+
+.lineaId {
+  background-color: #e4e2dc;
+  width: 75%;
+  height: 0.3%;
+  margin-top: 0.625rem;
+  margin-bottom: 0.625rem;
+}
+
+.profesionId {
+  font-size: 2rem;
+  font-weight: 400;
+  font-stretch: condensed;
+  color: rgb(255, 255, 255);
+}
+
+.descripcionId {
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: rgb(255, 255, 255);
+  margin-bottom: 1.875rem;
+}
+
+.sofwareId ul {
+  display: flex;
+  gap: 20px;
+}
+
+.emailContenedor {
+  width: 15.0762rem;
+  height: 2.2569rem;
+  background-color: #e4e2dc;
+  border-radius: 0.125rem;
+  box-shadow: inset 0 0.1rem 0.2rem;
+  margin-bottom: 3.875rem;
+  position: relative;
+}
+
+.emailContenedor p {
+  padding: 0.3125rem;
+}
+
+.emailContenedor div button {
+  width: 2.4375rem;
+  height: 2.4375rem;
+  margin-right: 0.9375rem;
+  position: absolute;
+  right: 0%;
+  bottom: 0px;
+  left: 285px;
+  background-color: #7a1d63;
+}
+
+.emailContenedor .copy button {
+  position: absolute;
+  margin-right: 10px;
+  right: 0px;
+  bottom: 0px;
+  left: 240px;
+}
+
+.imagenId {
+  height: 65%;
+  border-radius: 1.375rem;
+  overflow: hidden;
+}
+
+.imagenId img {
+  width: 100%;
+  object-fit: cover;
+}
+
+.botonesId {
+  justify-content: flex-start;
+  display: flex;
+  gap: 1.25rem;
+  font-size: 2rem;
+  align-items: center;
+}
+
+.serviciosBoton button {
+  background-color: #35dadc;
+  width: 8.875rem;
+  height: 3.0625rem;
+  font-size: 2rem;
+  color: #7a1d63;
+  border-radius: 0.625rem;
+  font-weight: 500;
+  font-stretch: condensed;
+}
+
+.proyectosBoton button {
+  background-color: #ffa900;
+  width: 9.975rem;
+  height: 3.0625rem;
+  border-radius: 0.625rem;
+  font-weight: 500;
+  font-stretch: condensed;
+  font-size: 2rem;
+  color: #7a1d63;
+}
+
+.sofwareId {
+  list-style: none;
+  color: aliceblue;
+}
+
+.sofwareId ul li {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  font-size: 15px;
+  width: 100%;
+}
+
+.sofwareId ul li img {
+  width: 48px;
+}

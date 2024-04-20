@@ -1,0 +1,28 @@
+/** Base  **/
+
+@import "./base/reset";
+
+@import "./base/tipography";
+
+/** utilities  **/
+
+/** layout  **/
+
+@import "./layout/header";
+@import "./layout/main-services";
+@import "./layout/main-index";
+@import "./layout/footer";
+@import "./layout/faq";
+@import "./layout/main-contact";
+@import "./layout/main-proyect";
+@import "./layout/Servicios/vectorizacion";
+
+/** components  **/
+@import "./components/navbar";
+@import "./components/cards-services";
+@import "./components/form-contact";
+@import "./components/galery";
+@import "./components/hero-id";
+
+/** MediaQ  **/
+@import "./layout/mediaq";
