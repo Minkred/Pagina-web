@@ -2,9 +2,7 @@
   background-color: whitesmoke;
   div {
     h3 {
-      padding: 1.875rem;
-      font-size: 2rem;
-      text-align: center;
+      @include titulo-seccion;
     }
   }
 }
@@ -17,13 +15,13 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  color: azure;
 
   p {
     background-color: #ad4893;
     margin: 0.625rem;
     padding: 0.625rem;
     border-radius: 5px;
+    color: azure;
     &:hover {
       background-color: #7a1d63;
     }
@@ -31,13 +29,9 @@
 }
 
 .proyectos {
-  padding: 20px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  padding-bottom: 3.125rem;
+  @include caja-seccion-cards(flex, row, space-evenly, wrap, none);
 
+  padding-bottom: 3.125rem;
   div {
     width: 35.1875rem;
     height: 30.5625rem;

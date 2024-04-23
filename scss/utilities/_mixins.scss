@@ -1,0 +1,20 @@
+@mixin seccion-fondo-a {
+  background-color: whitesmoke;
+  padding-right: 9.375rem;
+  padding-left: 9.375rem;
+  padding-bottom: 3.125rem;
+}
+
+@mixin titulo-seccion {
+  padding: 1.875rem;
+  font-size: 2rem;
+  text-align: center;
+}
+
+@mixin caja-seccion-cards($display, $direction, $justify, $wrap, $gap) {
+  display: $display;
+  flex-direction: $direction;
+  justify-content: $justify;
+  flex-wrap: $wrap;
+  gap: $gap;
+}

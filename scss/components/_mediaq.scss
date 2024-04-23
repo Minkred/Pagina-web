@@ -85,6 +85,13 @@
   .infoId {
     display: flex;
     flex-direction: column;
+    div {
+      .botonesId {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+      }
+    }
   }
 
   .emailContenedor div button {
@@ -125,5 +132,11 @@
 
   .proyectos-nav p {
     font-size: 18px;
+  }
+
+  .graficaId {
+    .imagenId {
+      opacity: 0%;
+    }
   }
 }

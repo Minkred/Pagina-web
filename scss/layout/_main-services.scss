@@ -1,20 +1,10 @@
 .seccionServicios {
-  background-color: whitesmoke;
-  padding-right: 9.375rem;
-  padding-left: 9.375rem;
-  padding-bottom: 3.125rem;
+  @include seccion-fondo-a;
 
   .contenidoServicios {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-    gap: 30px;
+    @include caja-seccion-cards(flex, row, space-evenly, wrap, 1.875rem);
   }
 }
-
 .tituloSeccion {
-  padding: 1.875rem;
-  font-size: 2rem;
-  text-align: center;
+  @include titulo-seccion;
 }
