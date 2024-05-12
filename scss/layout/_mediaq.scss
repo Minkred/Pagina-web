@@ -68,12 +68,21 @@
 
   .tarjetaServicio {
     min-width: 300px;
+    height: 26.875rem;
+    .cardInfo {
+      gap: 10px;
+      div {
+        h3 {
+          font-size: 18px;
+        }
+      }
+    }
   }
 
   .tarjetaid {
-    margin-top: 200px;
+    margin-top: 100px;
     max-width: 75%;
-    min-width: 20.75rem;
+    min-width: 300px;
     min-height: 27.625rem;
     max-height: 220%;
   }
@@ -81,14 +90,42 @@
   .contenidoId {
     display: flex;
     flex-direction: column;
+
+    .imagen-id-movil {
+      img {
+        width: 150px;
+        position: absolute;
+        top: 150px;
+        border-radius: 10px;
+        left: 15%;
+        margin-left: 15%;
+        margin-left: 15%;
+      }
+    }
   }
 
   .infoId {
+    padding-top: 15px;
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    .descripcionId {
+      font-size: 15px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
   }
 
   .emailContenedor div button {
+    position: absolute;
+    margin-right: 10px;
+    right: 0px;
+    bottom: 0px;
+    left: 190px;
+  }
+
+  .emailContenedor .copy button {
     width: 2.4375rem;
     height: 2.4375rem;
     margin-right: 0.9375rem;
@@ -99,20 +136,14 @@
     background-color: #7a1d63;
   }
 
-  .emailContenedor .copy button {
-    position: absolute;
-    margin-right: 10px;
-    right: 0px;
-    bottom: 0px;
-    left: 190px;
-  }
-
   .seccionServicios {
     display: flex;
     flex-direction: column;
     justify-self: center;
     padding: 10px;
     padding-top: 20px;
+    padding-bottom: 50px;
+    gap: 1.875rem;
   }
 
   .contenedorFooter {
@@ -126,5 +157,114 @@
 
   .proyectos-nav p {
     font-size: 18px;
+  }
+
+  .graficaId {
+    display: none;
+  }
+
+  .botonesId {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-right: 10px;
+    div {
+      button {
+        width: 130px;
+        height: 45px;
+        font-size: 25px;
+        font-weight: 600;
+        font-stretch: condensed;
+      }
+    }
+  }
+  .testimonios {
+    .fondoTestimonios {
+      min-width: 100%;
+      min-height: 1000px;
+      background-size: cover;
+
+      .img-testimonios {
+        display: none;
+      }
+    }
+  }
+
+  .testimonio {
+    height: 210px;
+    padding: 30px;
+
+    .estrellas {
+      background-position: 70%;
+      background-size: 70%;
+    }
+
+    .tituloTestimonio {
+      font-size: 20px;
+    }
+
+    .descripcion {
+      font-size: 14px;
+    }
+  }
+
+  .comillaIzquierda {
+    position: absolute;
+    object-fit: fill;
+    right: 85%;
+    bottom: 70%;
+  }
+
+  .comillaDerecha {
+    position: absolute;
+    object-fit: fill;
+    left: 70%;
+    top: 50%;
+
+    width: 100px;
+    img {
+      width: 10%;
+    }
+  }
+}
+
+.sendIcon {
+  background-image: url(/Assets/img/send-icon.svg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 28px;
+}
+
+.copyIcon {
+  background-image: url(/Assets/img/copy-icon.svg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 28px;
+}
+
+@media (max-width: 1024px) {
+  .tarjetaServicio {
+    width: 21.875rem;
+  }
+  .seccionServicios {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .contenidoServicios {
+    @include caja-seccion-cards(flex, row, space-evenly, wrap, 1.25rem);
+  }
+}
+
+@media (min-width: 577px) {
+  .imagen-id-movil {
+    display: none;
+  }
+
+  .testimonio-2 {
+    display: none;
+  }
+
+  .testimonio-3 {
+    display: none;
   }
 }

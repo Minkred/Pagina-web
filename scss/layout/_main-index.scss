@@ -1,25 +1,48 @@
-.fondoTestimonios {
-  background-image: url(../Assets/img/fondo-testimonios.jpg);
-  height: 539px;
-  width: 100%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+.testimonios {
+  .fondoTestimonios {
+    background-image: url(../Assets/img/fondo-testimonios.jpg);
+
+    width: 100%;
+    min-height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .testimonio {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-self: space-evenly;
+  }
+
+  .img-testimonios {
+    background-image: url(/Assets/img/cars-testimonio-2.png);
+    width: 100%;
+    height: 80%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    opacity: 60%;
+    filter: blur(3px);
+  }
 }
 
 .tituloSeccion-2 {
-  padding: 1.875rem;
+  padding: 0.875rem;
   font-size: 2rem;
   text-align: center;
   color: aliceblue;
-  margin-bottom: 3.125rem;
   margin-top: 1.25rem;
 }
 
 .testimonio {
+  box-shadow: 0px 1px 5px #2b0c15;
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -28,49 +51,56 @@
   border-radius: 1.3125rem;
   padding-right: 3.8625rem;
   padding-left: 3.8625rem;
-  padding-top: 0.625rem;
-  padding-bottom: 0.625rem;
   color: #ad4893;
   text-align: left;
   font-weight: 500;
-  position: relative;
-}
+  .comillaIzquierda {
+    width: 120px;
+    position: absolute;
+    object-fit: fill;
+    right: 70%;
+    bottom: 70%;
+    img {
+      width: 70%;
+    }
+  }
 
-.comillaIzquierda {
-  position: absolute;
-  object-fit: fill;
-  right: 85%;
-  bottom: 70%;
-}
+  .comillaDerecha {
+    width: 120px;
+    position: absolute;
+    object-fit: fill;
+    left: 85%;
+    top: 60%;
+    img {
+      width: 70%;
+    }
+  }
 
-.comillaDerecha {
-  position: absolute;
-  object-fit: fill;
-  left: 90%;
-  top: 50%;
-}
+  .tituloTestimonio {
+    font-size: 1rem;
+    font-stretch: condensed;
+    text-align: center;
+  }
 
-.tituloTestimonio {
-  font-size: 1rem;
-  font-stretch: condensed;
-  text-align: center;
-}
+  .descripcion {
+    font-size: 0.8125rem;
+  }
 
-.descripcion {
-  font-size: 0.8125rem;
-}
+  .estrellas {
+    background-image: url(/Assets/img/estrellas-5.png);
+    background-repeat: no-repeat;
+    background-position: 100%;
+    width: 227px;
+    height: 24px;
+    margin-top: 10px;
+  }
 
-.estrellas {
-  width: 227px;
-  height: 24px;
-  margin: 0.625rem;
-}
-
-.testimono-bottom {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  margin-top: 0.9375rem;
-  color: #35dadc;
-  font-size: 0.8125rem;
+  .testimono-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 0.9375rem;
+    color: #35dadc;
+    font-size: 0.8125rem;
+  }
 }

@@ -6,9 +6,20 @@
 }
 
 @mixin titulo-seccion {
-  padding: 1.875rem;
+  display: flex;
+  flex-direction: row;
+  padding-top: 1.875rem;
+  padding-bottom: 3.125rem;
   font-size: 2rem;
-  text-align: center;
+
+  .linea-seccion {
+    height: 3px;
+    background-color: #ffa900;
+    width: 1000px;
+  }
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
 }
 
 @mixin caja-seccion-cards($display, $direction, $justify, $wrap, $gap) {

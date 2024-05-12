@@ -1,13 +1,13 @@
-/** Base  **/
+/* Base  */
 
 @import "./base/reset";
 
 @import "./base/tipography";
 
-/** utilities  **/
+/* utilities  */
 @import "./utilities/mixins";
 
-/** layout  **/
+/* layout  */
 
 @import "./layout/header";
 @import "./layout/main-services";
@@ -18,11 +18,11 @@
 @import "./layout/main-proyect";
 @import "./layout/Servicios/vectorizacion";
 
-/** components  **/
+/* components  */
 @import "./components/navbar";
 @import "./components/cards-services";
 @import "./components/form-contact";
 @import "./components/hero-id";
 
-/** MediaQ  **/
+/* MediaQ  */
 @import "./layout/mediaq";

@@ -1,4 +1,4 @@
-/** Base  **/
+/* Base  */
 * {
   margin: 0%;
   padding: 0%;
@@ -60,8 +60,8 @@ body {
   font-style: italic;
 }
 
-/** utilities  **/
-/** layout  **/
+/* utilities  */
+/* layout  */
 .linea-celeste-top {
   background-color: rgb(53, 218, 220);
   height: 1.3125rem;
@@ -69,7 +69,7 @@ body {
 
 .fondohero {
   width: 100%;
-  height: 100vh;
+  height: 700px;
   background-image: url(../Assets/img/fondo-hero.png);
   background-position: center;
   background-repeat: no-repeat;
@@ -108,33 +108,59 @@ body {
 }
 
 .tituloSeccion {
-  padding: 1.875rem;
+  display: flex;
+  flex-direction: row;
+  padding-top: 1.875rem;
+  padding-bottom: 3.125rem;
   font-size: 2rem;
-  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+.tituloSeccion .linea-seccion {
+  height: 3px;
+  background-color: #ffa900;
+  width: 1000px;
 }
 
-.fondoTestimonios {
+.testimonios .fondoTestimonios {
   background-image: url(../Assets/img/fondo-testimonios.jpg);
-  height: 539px;
   width: 100%;
+  min-height: 600px;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
   display: flex;
   align-items: center;
   flex-direction: column;
+  gap: 30px;
+}
+.testimonios .testimonio {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  justify-self: space-evenly;
+}
+.testimonios .img-testimonios {
+  background-image: url(/Assets/img/cars-testimonio-2.png);
+  width: 100%;
+  height: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  opacity: 60%;
+  filter: blur(3px);
 }
 
 .tituloSeccion-2 {
-  padding: 1.875rem;
+  padding: 0.875rem;
   font-size: 2rem;
   text-align: center;
   color: aliceblue;
-  margin-bottom: 3.125rem;
   margin-top: 1.25rem;
 }
 
 .testimonio {
+  box-shadow: 0px 1px 5px #2b0c15;
   display: flex;
   flex-direction: column;
   background-color: white;
@@ -143,45 +169,47 @@ body {
   border-radius: 1.3125rem;
   padding-right: 3.8625rem;
   padding-left: 3.8625rem;
-  padding-top: 0.625rem;
-  padding-bottom: 0.625rem;
   color: #ad4893;
   text-align: left;
   font-weight: 500;
-  position: relative;
 }
-
-.comillaIzquierda {
+.testimonio .comillaIzquierda {
+  width: 120px;
   position: absolute;
   object-fit: fill;
-  right: 85%;
+  right: 70%;
   bottom: 70%;
 }
-
-.comillaDerecha {
+.testimonio .comillaIzquierda img {
+  width: 70%;
+}
+.testimonio .comillaDerecha {
+  width: 120px;
   position: absolute;
   object-fit: fill;
-  left: 90%;
-  top: 50%;
+  left: 85%;
+  top: 60%;
 }
-
-.tituloTestimonio {
+.testimonio .comillaDerecha img {
+  width: 70%;
+}
+.testimonio .tituloTestimonio {
   font-size: 1rem;
   font-stretch: condensed;
   text-align: center;
 }
-
-.descripcion {
+.testimonio .descripcion {
   font-size: 0.8125rem;
 }
-
-.estrellas {
+.testimonio .estrellas {
+  background-image: url(/Assets/img/estrellas-5.png);
+  background-repeat: no-repeat;
+  background-position: 100%;
   width: 227px;
   height: 24px;
-  margin: 0.625rem;
+  margin-top: 10px;
 }
-
-.testimono-bottom {
+.testimonio .testimono-bottom {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -262,13 +290,25 @@ body {
   font-weight: 400;
 }
 
-.preguntaBox div {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  width: 80%;
-  min-width: 300px;
-  height: auto;
+.container {
+  width: 90%;
+  margin: 10px auto;
+}
+
+.container-faq {
+  padding: 20px;
+}
+
+.container-faq .title-faq {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.container-faq .item-faq {
+  box-shadow: 0 0 15px -1px rgba(226, 24, 24, 0.2);
+  margin-bottom: 20px;
+  border-radius: 10px;
   background-color: #d7eff0;
   font-size: 1.25rem;
   font-weight: 600;
@@ -276,8 +316,37 @@ body {
   border: 2px solid #35dadc;
   margin: 1.25rem;
 }
-.preguntaBox div p {
-  padding-left: 0.625rem;
+
+.container-faq .item-faq .question {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 20px 20px 80px;
+  transition: 0.4s;
+}
+
+.container-faq .item-faq .question .more {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.container-faq .item-faq .answer {
+  position: relative;
+  padding: 0 20px 0 80px;
+  overflow: hidden;
+  height: 0;
+  transition: 0.4s;
+}
+
+.container-faq .item-faq .answer p {
+  font-size: 1.3rem;
 }
 
 .contatoSeccion {
@@ -298,9 +367,19 @@ body {
   background-color: whitesmoke;
 }
 .seccionProyectos div h3 {
-  padding: 1.875rem;
+  display: flex;
+  flex-direction: row;
+  padding-top: 1.875rem;
+  padding-bottom: 3.125rem;
   font-size: 2rem;
-  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  gap: 30px;
+}
+.seccionProyectos div h3 .linea-seccion {
+  height: 3px;
+  background-color: #ffa900;
+  width: 1000px;
 }
 
 .proyectos-nav {
@@ -513,7 +592,7 @@ body {
   border-radius: 0.3125rem;
 }
 
-/** components  **/
+/* components  */
 nav {
   width: 100%;
   height: 80px;
@@ -541,6 +620,10 @@ nav ul li a {
   overflow: hidden;
   background-color: #7a1d63;
 }
+.tarjetaServicio:hover {
+  box-shadow: 5px 5px 20px #290c22;
+  transform: translateY(-3%);
+}
 .tarjetaServicio div {
   width: 100%;
   height: 70%;
@@ -559,10 +642,16 @@ nav ul li a {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  gap: 20px;
 }
 .tarjetaServicio .cardInfo div h3 {
   font-size: 20px;
   color: #e4e2dc;
+}
+.tarjetaServicio .cardInfo div div {
+  background-color: #ad4893;
+  height: 2px;
+  width: 80%;
 }
 .tarjetaServicio .cardInfo div p {
   color: #e4e2dc;
@@ -584,7 +673,6 @@ nav ul li a {
 .textoServicios {
   display: flex;
   align-items: center;
-  margin: 3.25rem;
   gap: 1.25rem;
 }
 
@@ -719,6 +807,16 @@ textarea {
   background-color: #7a1d63;
 }
 
+.sendIcon {
+  background-image: url(/Assets/img/send-icon.svg);
+  width: 34px;
+}
+
+.copyIcon {
+  background-image: url(/Assets/img/copy-icon.svg);
+  width: 34px;
+}
+
 .emailContenedor .copy button {
   position: absolute;
   margin-right: 10px;
@@ -748,44 +846,46 @@ textarea {
 
 .serviciosBoton button {
   background-color: #35dadc;
-  width: 8.875rem;
+  width: 10rem;
   height: 3.0625rem;
   font-size: 2rem;
   color: #7a1d63;
   border-radius: 0.625rem;
-  font-weight: 500;
+  font-weight: 600;
   font-stretch: condensed;
 }
 
 .proyectosBoton button {
   background-color: #ffa900;
-  width: 9.975rem;
+  width: 10.4rem;
   height: 3.0625rem;
   border-radius: 0.625rem;
-  font-weight: 500;
+  font-weight: 550;
   font-stretch: condensed;
   font-size: 2rem;
   color: #7a1d63;
 }
 
 .sofwareId {
+  margin-top: 10px;
   list-style: none;
   color: aliceblue;
 }
-
+.sofwareId ul {
+  display: flex;
+}
 .sofwareId ul li {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   list-style: none;
-  font-size: 15px;
-  width: 100%;
+  font-size: 12px;
 }
-
 .sofwareId ul li img {
   width: 48px;
 }
 
-/** MediaQ  **/
+/* MediaQ  */
 @media (max-width: 576px) {
   .body {
     display: flex;
@@ -844,11 +944,18 @@ textarea {
   /* Home */
   .tarjetaServicio {
     min-width: 300px;
+    height: 26.875rem;
+  }
+  .tarjetaServicio .cardInfo {
+    gap: 10px;
+  }
+  .tarjetaServicio .cardInfo div h3 {
+    font-size: 18px;
   }
   .tarjetaid {
-    margin-top: 200px;
+    margin-top: 100px;
     max-width: 75%;
-    min-width: 20.75rem;
+    min-width: 300px;
     min-height: 27.625rem;
     max-height: 220%;
   }
@@ -856,11 +963,35 @@ textarea {
     display: flex;
     flex-direction: column;
   }
+  .contenidoId .imagen-id-movil img {
+    width: 150px;
+    position: absolute;
+    top: 150px;
+    border-radius: 10px;
+    left: 15%;
+    margin-left: 15%;
+    margin-left: 15%;
+  }
   .infoId {
+    padding-top: 15px;
     display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
+  .infoId .descripcionId {
+    font-size: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .emailContenedor div button {
+    position: absolute;
+    margin-right: 10px;
+    right: 0px;
+    bottom: 0px;
+    left: 190px;
+  }
+  .emailContenedor .copy button {
     width: 2.4375rem;
     height: 2.4375rem;
     margin-right: 0.9375rem;
@@ -870,19 +1001,14 @@ textarea {
     left: 155px;
     background-color: #7a1d63;
   }
-  .emailContenedor .copy button {
-    position: absolute;
-    margin-right: 10px;
-    right: 0px;
-    bottom: 0px;
-    left: 190px;
-  }
   .seccionServicios {
     display: flex;
     flex-direction: column;
     justify-self: center;
     padding: 10px;
     padding-top: 20px;
+    padding-bottom: 50px;
+    gap: 1.875rem;
   }
   .contenedorFooter {
     height: 120%;
@@ -894,6 +1020,101 @@ textarea {
   }
   .proyectos-nav p {
     font-size: 18px;
+  }
+  .graficaId {
+    display: none;
+  }
+  .botonesId {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-right: 10px;
+  }
+  .botonesId div button {
+    width: 130px;
+    height: 45px;
+    font-size: 25px;
+    font-weight: 600;
+    font-stretch: condensed;
+  }
+  .testimonios .fondoTestimonios {
+    min-width: 100%;
+    min-height: 1000px;
+    background-size: cover;
+  }
+  .testimonios .fondoTestimonios .img-testimonios {
+    display: none;
+  }
+  .testimonio {
+    height: 210px;
+    padding: 30px;
+  }
+  .testimonio .estrellas {
+    background-position: 70%;
+    background-size: 70%;
+  }
+  .testimonio .tituloTestimonio {
+    font-size: 20px;
+  }
+  .testimonio .descripcion {
+    font-size: 14px;
+  }
+  .comillaIzquierda {
+    position: absolute;
+    object-fit: fill;
+    right: 85%;
+    bottom: 70%;
+  }
+  .comillaDerecha {
+    position: absolute;
+    object-fit: fill;
+    left: 70%;
+    top: 50%;
+    width: 100px;
+  }
+  .comillaDerecha img {
+    width: 10%;
+  }
+}
+.sendIcon {
+  background-image: url(/Assets/img/send-icon.svg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 28px;
+}
+
+.copyIcon {
+  background-image: url(/Assets/img/copy-icon.svg);
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: 28px;
+}
+
+@media (max-width: 1024px) {
+  .tarjetaServicio {
+    width: 21.875rem;
+  }
+  .seccionServicios {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .contenidoServicios {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 1.25rem;
+  }
+}
+@media (min-width: 577px) {
+  .imagen-id-movil {
+    display: none;
+  }
+  .testimonio-2 {
+    display: none;
+  }
+  .testimonio-3 {
+    display: none;
   }
 }
 
